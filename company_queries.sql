@@ -91,7 +91,9 @@ WHERE salary = (select max(salary) from employees)
 --Query 7: Retrieve the department name and the average salary of employees in each department:
 SELECT D.department_name,avg(E.salary) as avg_salary FROM employees E
     JOIN departments D ON E.department_id = D.department_id
-        GROUP BY D.department_name
+        GROUP BY D.department_name\
+
+
 
 
         
